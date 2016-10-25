@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "gateway",
+      "script": "./index.js",
+      "watch": true,
+      "error_file": "./logs/gateway_logs/errors.txt",
+      "out_file": "./logs/gateway_logs/logs.txt",
+      "exec_mode": "cluster",
+      "instances": 2,
+      "env": {
+        "NOE_ENV": "development"
+      }
+    }
+  ]
+}
